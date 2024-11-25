@@ -1,0 +1,22 @@
+server: waiting for connections...
+server: got connection from 127.0.0.1
+Command is HELO foobar
+Executing helo
+Command is VRFY norm.hutchinson@gmail.com
+Executing vrfy
+Command is MAIL FROM:<norm@cs.ubc.ca>
+Executing mail
+Command is RCPT TO:<norm@cs.ubc.ca>
+Executing rcpt
+Command is RCPT TO:<edward.snowden@example.com>
+Executing rcpt
+Command is RCPT TO:<john.doe@example.com>
+Executing rcpt
+Command is DATA
+Executing data
+Command is RSET
+Executing rset
+Command is NOOP
+Executing noop
+Command is QUIT
+Executing quit
