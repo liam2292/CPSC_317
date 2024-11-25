@@ -1,0 +1,20 @@
+// time src dst interface ttl length
+@0.234 142.103.10.41 142.103.11.99 1 63 27
+@0.767 142.103.10.41 142.103.11.99 6 2 28
+@0.888 98.97.96.95 17.0.0.1 1 5 32
+@0.999 142.103.10.41 142.103.10.99 2 23 29
+
+// A packet that matches a specific route, expected to go through port 2, not the default route.
+//@1.000 142.103.10.50 142.103.10.1 1 10 50
+
+// A packet that doesn't match any specific route, should be forwarded to the default route on port 7.
+@2.000 192.168.1.100 8.8.8.8 1 1 50
+
+// This packet matches the most specific route of 142.103.10.128/25, should be forwarded through port 4.
+//@3.000 142.103.10.50 142.103.10.130 1 10 50
+// Another packet for the other specific route of 142.103.10.0/25, should be forwarded through port 3.
+//@4.000 142.103.10.50 142.103.10.70 1 10 50
+
+// A packet with a destination outside any configured specific routes, expected to use the default route on port 7.
+//@5.000 10.0.0.1 172.217.0.0 1 10 50
+

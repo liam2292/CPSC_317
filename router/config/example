@@ -1,0 +1,15 @@
+// comment
+// define a port
+// add a forwarding rule
+port 0 
+port 1
+port 2
+port 3
+port 4
+port 5
+port 6
+port 7
+forward 142.103.10.0/16 port 2
+forward 0.0.0.0/0 port 0
+forward 142.103.10.0/17 port 3
+forward 17.0.0.0/8 port 1
