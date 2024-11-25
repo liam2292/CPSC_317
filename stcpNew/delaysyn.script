@@ -1,0 +1,4 @@
+// Delay the first incoming and outgoing SYN segments by 
+// the respective number of milliseconds
+in syn 1 delay 900
+out syn 1 delay 300

@@ -1,0 +1,2 @@
+// Drop the first incoming syn segment
+in syn 1 drop

@@ -1,0 +1,2 @@
+// Set all the probability of delay in consuming data to .7
+consume 70%

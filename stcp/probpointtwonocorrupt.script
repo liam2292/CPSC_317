@@ -1,0 +1,10 @@
+// Set all the probabilities to .2 except corruption
+drop ack 20%
+drop data 20%
+drop syn 20%
+drop fin 20%
+swap ack 20%
+swap data 20%
+swap syn 20%
+swap fin 20%
+consume 20%
